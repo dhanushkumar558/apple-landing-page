@@ -1,0 +1,176 @@
+body {
+  
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    margin: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background-color: whitesmoke;
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.video-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.relax {
+    position: absolute;
+    bottom: 20px; /* Positioning the text at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.relax h3 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.relax p {
+    font-size: larger;
+    color: aqua;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+   
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 576px) {
+    .nav-items {
+       
+        flex-direction: coloumn;
+        
+    }
+
+    .relax h3 {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .relax p {
+        font-size: medium;
+    }
+    .navbar-toggler
+{
+    margin-right: 10px;
+}
+.navbar-toggler-icon
+{
+    text-decoration: none;
+    
+    
+    outline: none;
+    display: inline-block;
+    background-color: none;
+    border: none;
+    position: relative;
+  
+    
+}
+.navbar-toggler-icon:focus-visible
+{
+    outline:none;
+}
+.hamburger-menu:focus-visible {
+    outline: none; /* Remove the outline for keyboard focus */
+}
+
+   
+
+  .search-icon
+  {
+    position: absolute;
+  transform: translateY(-300px);
+  left:20px;
+ 
+
+   
+  }
+  .cart{
+    
+    transform: translateY(-30px);
+    right:20px;
+    top:120px;
+    position: absolute;
+   
+ 
+ 
+
+   
+ 
+  }
+
+
+
+}
+.main1
+{
+    position: relative;
+
+}
+.overlay 
+{
+    position: absolute;
+top:15%;
+right: 33%;
+color: white;
+
+   
+}
+.overlay h1{
+    font-size: 60px;
+}
+
+.main2
+{
+    position: relative;
+
+}
+.overlay1
+{
+    position: absolute;
+top:15%;
+right: 33%;
+
+
+   
+}
+.overlay1 h1
+{
+    font-size: 60px;
+    color: black;
+}
