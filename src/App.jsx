@@ -1,4 +1,10 @@
-import "./App.css";
+// eslint-disable-next-line no-unused-vars
+// @ts-ignore
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 export default function BootstrapPractice() {
   return (
@@ -35,67 +41,117 @@ export default function BootstrapPractice() {
       </div>
 
       <div className="main3">
-  <div className="container-fluid phone3 p-0">
-    <video 
-      autoPlay 
-       
-      
-      className="" 
-      style={{width: "100%", height: "auto"}}
-    >
-      <source src="Y2meta.app - Introducing iPhone 15 _ WOW _ Apple.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <h1 className="videoH hellos">iPhone 15</h1>
-    <p className=" videoP hellos1">New Camera, New design, Newphoria.</p>
-  </div>
-</div>
+        <div className="container-fluid phone3 p-0">
+          <video className="" style={{ width: "100%", height: "auto" }}>
+            <source src="Y2meta.app - Introducing iPhone 15 _ WOW _ Apple.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h1 className="videoH hellos">Relax, its iphone</h1>
+          <p className="videoP hellos1">Dependably durable</p>
+        </div>
+      </div>
+
+      <div className="main3 marginup">
+        <div className="container-fluid phone3 p-0">
+          <img src="promo_macbook_air_m3__e43jegok3wuq_large_2x (1).jpg" alt="MacBook Air M3 promo" className="img-fluid" style={{ width: "100%", height: "auto" }} />
+          <h1 className="hellos">iPhone 15</h1>
+          <p className="hellos1">New Camera, New design, Newphoria.</p>
+        </div>
+      </div>
+
+      <div className="main3 marginup">
+        <div className="container-fluid phone3 p-0">
+          <img src="promo_macbook_air_m3__e43jegok3wuq_large_2x (1).jpg" alt="MacBook Air M3 promo" className="img-fluid" style={{ width: "100%", height: "auto" }} />
+          <h1 className="hellos">iPhone 15</h1>
+          <p className="hellos1">New Camera, New design, Newphoria.</p>
+        </div>
+      </div>
+
+      <div className="container-fluid this">
+        <div className="content2 row this">
+          <div className="col col-lg-6 col-sm-12 heybro this">
+            <div className="inner this">
+              <img src="Screenshot (15).png" width={"100%"} height={"500px"} alt="Screenshot" />
+            </div>
+          </div>
+
+          <div className="col col-lg-6 col-sm-12 hellobro this">
+            <div className="inner">
+              <img src="1960x1102 (9).jpg" width={"100%"} height={"500px"} alt="1960x1102" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional sections */}
+
+      <div className="container-fluid this">
+        <div className="content2 row this">
+          <div className="col col-lg-6 col-sm-12 heybro this">
+            <div className="inner this">
+              <img src="Screenshot (15).png" width={"100%"} height={"500px"} alt="Screenshot" />
+            </div>
+          </div>
+
+          <div className="col col-lg-6 col-sm-12 hellobro this">
+            <div className="inner">
+              <img src="1960x1102 (9).jpg" width={"100%"} height={"500px"} alt="1960x1102" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid this">
+        <div className="content2 row this">
+          <div className="col col-lg-6 col-sm-12 heybro this">
+            <div className="inner this">
+              <img src="Screenshot (15).png" width={"100%"} height={"500px"} alt="Screenshot" />
+            </div>
+          </div>
+
+          <div className="col col-lg-6 col-sm-12 hellobro this">
+            <div className="inner">
+              <img src="1960x1102 (9).jpg" width={"100%"} height={"500px"} alt="1960x1102" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Carousel */}
+      <div className="carousel-container carousel-container1">
+      <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active
+          "></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="1960x1102 (3).jpg" alt="Los Angeles" className=" w-100 carousel-img" />
+          </div>
+          <div className="carousel-item">
+            <img src="1960x1102 (7).jpg" alt="Chicago" className=" w-100 carousel-img" />
+          </div>
+          <div className="carousel-item">
+            <img src="1960x1102 (1).jpg" alt="New York" className=" w-100 carousel-img" />
+          </div>
+        </div>
+        
+        <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon"></span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span className="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
 
 
+    </>
 
-      <div className="main3">
-  <div className="container-fluid phone3 p-0">
-    <img 
-      src="promo_macbook_air_m3__e43jegok3wuq_large_2x (1).jpg" 
-      alt="MacBook Air M3 promo" 
-      className="img-fluid"
-      style={{width: "100%", height: "auto"}}
-    />
-    <h1 className="hellos">iPhone 15</h1>
-    <p className="hellos1">New Camera, New design, Newphoria.</p>
-  </div>
-</div>
-
-
-      <div className="main3">
-  <div className="container-fluid phone3 p-0">
-    <img 
-      src="promo_macbook_air_m3__e43jegok3wuq_large_2x (1).jpg" 
-      alt="MacBook Air M3 promo" 
-      className="img-fluid"
-      style={{width: "100%", height: "auto"}}
-    />
-    <h1 className="hellos">iPhone 15</h1>
-    <p className="hellos1">New Camera, New design, Newphoria.</p>
-  </div>
-</div>
-
-    
-
-
-      <div className="main3">
-  <div className="container-fluid phone3 p-0">
-    <img 
-      src="promo_macbook_air_m3__e43jegok3wuq_large_2x (1).jpg" 
-      alt="MacBook Air M3 promo" 
-      className="img-fluid"
-      style={{width: "100%", height: "auto"}}
-    />
-    <h1 className="hellos">iPhone 15</h1>
-    <p className="hellos1">New Camera, New design, Newphoria.</p>
-  </div>
-</div>
-
-</>
   );
+  
 }

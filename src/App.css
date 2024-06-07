@@ -1,127 +1,191 @@
-/* General Styles */
-body {
-    padding: 0;
+ /* General Styles */
+
+ .marginup
+ {
+     margin-top: 20px;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ .left
+ {
+     margin-left: 20px;
+ }
+ .right
+ {
+     margin-right: 10px;
+ }
+ 
+ 
+ .nav-items {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     
+ }
+ 
+ .cursor {
+     cursor: pointer;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Main Content Styles */
+ .phone3 {
+     position: relative;
+ }
+ 
+ .hellos {
+     position: absolute;
+     top: 5%;
+     left: 50%;
+     transform: translateX(-50%);
+     color: black; /* Ensures the text is visible on the image */
+     text-align: center;
+     width: 100%; /* Makes sure the text is centered */
+     font-size: 70px;
+ }
+ 
+ .hellos1 {
+     position: absolute;
+     top: 17%;
+     left: 50%;
+     transform: translateX(-50%);
+     color: red;
+     text-align: center;
+     width: 100%;
+     font-size: 40px;
+ }
+ .videoH
+ {
+     top:75%;
+     color: white;
+ }
+ .videoP{
+     top:85%;
+     
+     font-style: italic;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+ /* Responsive font sizes */
+ @media (max-width: 1200px) {
+     .hellos {
+         font-size: 50px;
+     }
+ 
+     .hellos1 {
+         font-size: 30px;
+     }
+ }
+ 
+ @media (max-width: 992px) {
+     .hellos {
+         font-size: 40px;
+     }
+ 
+     .hellos1 {
+         font-size: 25px;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     .hellos {
+         font-size: 30px;
+     }
+ 
+     .hellos1 {
+         font-size: 20px;
+     }
+ }
+ 
+ @media (max-width: 576px) {
+     .hellos {
+         font-size: 20px;
+     }
+ 
+     .hellos1 {
+         font-size: 15px;
+     }
+ 
+     .nav-items {
+         flex-direction: column;
+     }
+     .this
+     {
+         padding: 0;
+         margin: 0;
+     }
+     .carousel-container {
+         position: relative;
+         width: 100%; /* Adjust this value to control the visible width of the carousel */
+       
+         margin-top: 30px;
+       }
+       
+       .carousel-inner {
+        
+         overflow: hidden;
+       }
+       
+       
+       .carousel-item img {
+         
+       }
+ }
+ 
+ 
+ .heybro
+ {
+   
     
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.navbar {
-    background-color: whitesmoke;
-}
-
-.nav-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+     
+ }
+ 
+ .inner
+ {
+     margin-top: 30px;
+     margin-left: 0px;
+     margin-right: 0px;
+     padding: 0;
+     width: 100%;
     
-}
-
-.cursor {
-    cursor: pointer;
-}
-
-
-
-.navbar-toggler-icon {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    background-color: none;
-    border: none;
-    position: relative;
-}
-
-.navbar-toggler-icon:focus-visible,
-.hamburger-menu:focus-visible {
-    outline: none;
-}
-
-
-
-
-
-/* Main Content Styles */
-.phone3 {
-    position: relative;
-}
-
-.hellos {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black; /* Ensures the text is visible on the image */
-    text-align: center;
-    width: 100%; /* Makes sure the text is centered */
-    font-size: 70px;
-}
-
-.hellos1 {
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: red;
-    text-align: center;
-    width: 100%;
-    font-size: 40px;
-}
-.videoH
-{
-    top:75%;
-}
-.videoP{
-    top:85%;
-}
-
-/* Responsive font sizes */
-@media (max-width: 1200px) {
-    .hellos {
-        font-size: 50px;
-    }
-
-    .hellos1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 992px) {
-    .hellos {
-        font-size: 40px;
-    }
-
-    .hellos1 {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hellos {
-        font-size: 30px;
-    }
-
-    .hellos1 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .hellos {
-        font-size: 20px;
-    }
-
-    .hellos1 {
-        font-size: 15px;
-    }
-
-    .nav-items {
-        flex-direction: column;
-    }
-}
+     background-color: red;
+ }
+ 
+ 
+ .carousel-container {
+     position: relative;
+     width: 80%; /* Adjust this value to control the visible width of the carousel */
+     margin: auto;
+     margin-top: 30px;
+   }
+   
+   .carousel-inner {
+     display: flex;
+     overflow: hidden;
+   }
+   
+   .carousel-item {
+     flex: 0 0 100%;
+     max-width: 100%;
+     transition: transform 0.6s ease;
+   }
+   
+   .carousel-item img {
+     width: 100%;
+   }
